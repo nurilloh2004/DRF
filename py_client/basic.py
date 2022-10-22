@@ -5,7 +5,7 @@ import requests
 endpoint = "http://localhost:8000/api/"
 
 
-get_response = requests.get(endpoint, params={"abc" : 123},json={"query": "Hello world"}) #HTTP requests
+get_response = requests.get(endpoint,json={"query": 123}) #HTTP requests
 print(get_response.text) #print our response on text format
 print(get_response.status_code)
-print(get_response.json()['message'])
+# print(get_response.json()['message'])
